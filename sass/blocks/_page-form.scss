@@ -1,0 +1,114 @@
+.page-form {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.page-form__container {
+  @include container (280px, 0 20px);
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.page-form__logo-name {
+  height: 160px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 768px 389px;
+  background-position: 51% 100%;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+
+.page-form__sedona-moto {
+  width: 320px;
+  height: 40px;
+  margin-top: 50px;
+}
+
+.page-form__sedona-bg-triangle {
+  position: absolute;
+  top: 413px;
+  height: 26px;
+}
+
+@media #{$tablet} {
+  .page-form {
+    min-width: 768px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 26px;
+  }
+
+  .page-form__logo-name {
+    position: relative;
+    height: 290px;
+    margin-bottom: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 518px;
+    background-position: 0 100%;
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  .page-form__sedona-moto {
+    width: 458px;
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 154px;
+  }
+
+  .page-form__sedona-bg-triangle {
+    position: absolute;
+    top: 233px;
+    left: 0;
+    height: 57px;
+  }
+}
+
+@media #{$desktop} {
+  .page-form {
+    min-width: 1200px;
+    padding: 0 40px;
+    background-color: $light-grey;
+  }
+
+  .page-form__logo-name {
+    position: relative;
+    height: 302px;
+    margin: 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .page-form__sedona-moto {
+    width: 460px;
+    height: 79px;
+    margin: 50px auto;
+    margin-top: 100px;
+    margin-left: 368px;
+  }
+
+  .page-form .page-form__container {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $white;
+  }
+
+  .page-form__sedona-bg-triangle {
+    top: 245px;
+  }
+}

@@ -1,0 +1,167 @@
+.btn {
+  color: $white;
+  height: 58px;
+}
+
+.btn__send-comment {
+  padding: 16px 33px;
+  margin-bottom: 55px;
+  border: none;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $lightblue;
+}
+
+.btn--error,
+.btn--scs {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  outline: none;
+  background-color: $lightblue;
+}
+
+.btn--error {
+  width: 180px;
+  margin-bottom: 35px;
+}
+
+.btn--scs {
+  width: 320px;
+  height: 100px;
+  border: 20px solid $light-grey;
+}
+
+.btn-nav__toggle-close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  fill: $white;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-nav__close,
+.btn-nav__open {
+  width: 22px;
+  height: 22px;
+}
+
+.main-nav--closed .btn-nav__toggle-open {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  fill: $lightblue;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn--search {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $lightblue;
+}
+
+.btn--search:hover {
+  background-color: $btn-color--hover;
+}
+
+.btn--search:active {
+  background-color: $btn-color--down;
+  color: $btn-color-text;
+}
+
+.btn-hidden-field {
+  display: none;
+}
+
+.button--replay {
+  padding: 0;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+@media #{$tablet} {
+  .btn-nav__toggle {
+    display: none;
+  }
+
+  .btn-nav__toggle-open {
+    display: none;
+  }
+
+  .btn--search {
+    padding-left: 148px;
+    padding-right: 148px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: $lightblue;
+  }
+
+  .btn__send-comment {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 105px;
+  }
+
+  .btn-hidden-field {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 160px;
+    width: 160px;
+    font-size: 14px;
+    line-height: 26px;
+    color: $form-light-black;
+  }
+
+  .btn--error {
+    width: 272px;
+  }
+
+  .btn--scs {
+    width: 648px;
+    height: 146px;
+    border-right: 90px solid $light-grey;
+    border-left: 90px solid $light-grey;
+    border-top: 45px solid $light-grey;
+    border-bottom: 45px solid $light-grey;
+  }
+}
+
+@media #{$desktop} {
+  .btn__send-comment {
+    padding-left: 135px;
+    padding-right: 135px;
+    margin-bottom: 110px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .btn-hidden-field {
+    text-align: right;
+    margin-left: 316px;
+  }
+}

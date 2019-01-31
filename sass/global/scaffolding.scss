@@ -1,0 +1,52 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $black;
+  background-color: $light-grey;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+@media #{$tablet} {
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+@media #{$desktop} {
+  body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}

@@ -1,0 +1,79 @@
+.creators {
+  font-size: 0;
+  line-height: 26px;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.creators__container {
+  @include container (280px, 0 20px);
+  padding-top: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $white;
+}
+
+.creators__dev {
+  font-size: 14px;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-left: 3px;
+  margin-right: 14px;
+}
+
+.creators__img {
+  fill: $black;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.creators__img:hover {
+  fill: $lightblue;
+}
+
+.creators__img:active {
+  fill: $lighten-grey;
+}
+
+@media #{$tablet} {
+  .creators {
+    width: 196px;
+    text-align: right;
+  }
+
+  .creators .creators__container {
+    display: flex;
+    width: 196px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  .creators__dev {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 5px;
+    margin-right: 11px;
+    margin-bottom: 0;
+  }
+}
+
+@media #{$desktop} {
+  .creators {
+    width: 400px;
+    background-color: $white;
+  }
+
+  .creators .creators__container {
+    width: 400px;
+  }
+
+  .creators__img {
+    padding-right: 45px;
+  }
+}

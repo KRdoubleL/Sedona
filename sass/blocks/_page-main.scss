@@ -1,0 +1,126 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 768px 390px;
+  background-position: center 0;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+
+.page-main__inviting {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.page-main__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__sedona-moto {
+  width: 280px;
+  height: 215px;
+  margin: 0 auto;
+  margin-top: 89px;
+  margin-left: 21px;
+}
+
+.page-main__sedona-bg-triangle {
+  position: absolute;
+  height: 27px;
+  width: 100%;
+  top: 362px;
+  left: 0;
+}
+
+.page-main__sedona-mntn {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+@media #{$tablet} {
+  .page-main {
+    min-width: 768px;
+    margin: 0 auto;
+    margin-top: -30px;
+    font-size: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 518px;
+    background-position: 0 0;
+    z-index: 1000000;
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .page-main__inviting {
+    height: 518px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .page-main__sedona-moto {
+    width: 460px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 77px;
+  }
+
+  .text-sedona-index {
+    width: 500px;
+    height: 376px;
+  }
+
+  .page-main__sedona-bg-triangle {
+    bottom: 70px;
+    height: 57px;
+    margin-top: 99px;
+  }
+}
+
+@media #{$desktop} {
+  .page-main {
+    min-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+    font-size: 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 518px;
+    background-position: 40px 0;
+    background-color: $light-grey;
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .page-main__inviting {
+    padding-bottom: 0;
+  }
+
+  .page-main__sedona-moto {
+    width: 465px;
+    margin-top: 70px;
+    margin-left: 367px;
+  }
+
+  .page-main__sedona-bg-triangle {
+    position: absolute;
+    bottom: 0;
+  }
+}

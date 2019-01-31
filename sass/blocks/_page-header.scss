@@ -1,0 +1,36 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.page-header .main-nav--opened {
+  height: 279px;
+  padding-bottom: 0;
+  background-color: $white;
+  z-index: 1000;
+}
+
+.page-header .main-nav--closed {
+  height: 55px;
+}
+
+@media #{$tablet} {
+  .page-header {
+    min-width: 767px;
+  }
+
+  .page-header .main-nav--opened {
+    height: 60px;
+    padding-bottom: 0;
+  }
+}
+
+@media #{$desktop} {
+  .page-header {
+    min-width: 1200px;
+    //margin-bottom: -50px;
+    padding: 0 40px;
+    background-color: $light-grey;
+  }
+}

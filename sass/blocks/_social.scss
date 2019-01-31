@@ -1,0 +1,96 @@
+.social {
+  text-align: center;
+}
+
+.social__container {
+  @include container (280px, 0 20px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.social__hashtag {
+  font-size: 21px;
+}
+
+.social__btn {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.social__btn--elmnts {
+  background-color: $lightblue;
+}
+
+.social__btn--elmnts:nth-child(1) {
+  padding-top: 8px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 13px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.social__btn--elmnts:nth-child(2) {
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.social__btn--elmnts:nth-child(3) {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.social-img {
+  vertical-align: middle;
+  fill: $white;
+}
+
+.social__btn--elmnts:hover {
+  background-color: $btn-color--hover;
+}
+
+.social__btn--elmnts:active {
+  background-color: $btn-color--down;
+}
+
+.social__btn--elmnts:active .social-img {
+  fill: $btn-color-text;
+}
+
+@media #{$tablet} {
+  .social {
+    margin: 0;
+  }
+
+  .social__container {
+    width: 256px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .social__btn {
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop} {
+  .social {
+    background-color: $white;
+  }
+
+  .social__container {
+    width: 400px;
+  }
+}

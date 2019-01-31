@@ -1,0 +1,36 @@
+$black: #000000; //базовые цвета
+$white: #ffffff;
+
+$lightblue: #81b3d2; // цвета навигации, кнопок... голубой.
+$light-grey-bg: #e5e5e5; // светло-серый для фона
+$active-hover-menu: #604e43; // светло-коричневый active hover
+$light-grey: #f2f2f2; //цвет светло-серый
+$lighten-grey: #b2b2b2; // цвет кнопок нравиться, button-down
+$bg-feature-hidden: #eeeeee;
+$lightest-light-grey: #dbdbdb;
+$dark-grey: #e6e6e6; //цвет дополнительных блоков в input
+
+$form-light-black: #333333; // кастомный цвет в форме; video--hover
+
+
+$main-menu--active: #766357; //active; active:hover
+$main-menu--disabled: #e5e5e5; // цвет бордера и disabled
+$main-menu-active-down: #e1ddda;
+
+$btn-color--hover: #669ec0; // для синих кнопок
+$btn-color--down: #5496bd;
+$btn-color-text: #88b6d1;
+$blue-btn-down: #84b4d0;
+$border-clr: #d6d6d6;
+$menu-border-bottom: #678fa8;
+$menu-border-top: #9ac2db;
+
+$form-choose--down: #d5d5d5; // фон checkbox/radio down
+
+$video-btn--colors: #5c6870; // цвет видео кнопок
+$video-btn--down: #c1c1c1;
+
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1200px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

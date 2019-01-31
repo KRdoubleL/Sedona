@@ -1,0 +1,300 @@
+.photo-video {
+  background-color: $white;
+}
+
+.photo-video__about {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $light-grey-bg;
+}
+
+.photo-video__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.photo-video__paragrapg {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $form-light-black;
+}
+
+.photo-video__doubt {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: $white;
+}
+
+.photo-video__still-doubt {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.photo-video__end-doubt {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-video__block {
+  position: relative;
+  background-color: $white;
+}
+
+.photo-video__block .photo-video__container {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 130px;
+}
+
+.photo-video__range-filter {
+  width: 280px;
+  margin: auto;
+  margin-top: -52px;
+}
+
+.photo-video__controls {
+  position: relative;
+  height: 45px;
+  padding: 0 30px;
+  background-color: black;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+.photo-video__scale {
+  margin-top: 22px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.photo-video__scale--bar {
+  height: 2px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.photo-video__toggle {
+  position: absolute;
+  top: 19px;
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.photo-video__toggle--min {
+  left: 58px;
+  background-color: white;
+  opacity: 1;
+}
+
+.photo-video__buttons {
+  display: flex;
+  font-size: 0;
+  width: 280px;
+  padding: 23px 0;
+  margin: 0 auto;
+  background-color: $light-grey-bg;
+  z-index: 1000;
+}
+
+.photo-video__button {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.photo-video__buttons svg {
+  vertical-align: middle;
+}
+
+.photo-video__replay-btn {
+  height: 20px;
+}
+
+.photo-video__cc-btn {
+  height: 20px;
+}
+
+.photo-video__full-btn {
+  height: 20px;
+}
+
+.photo-video__replay-btn,
+.photo-video__cc-btn,
+.photo-video__full-btn {
+  fill: $video-btn--colors;
+}
+
+.photo-video__replay-btn:hover,
+.photo-video__cc-btn:hover,
+.photo-video__full-btn:hover {
+  fill: $form-light-black;
+}
+
+.photo-video__replay-btn:active,
+.photo-video__cc-btn:active,
+.photo-video__full-btn:active {
+  fill: $video-btn--down;
+}
+
+@media #{$tablet} {
+  .photo-video {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .photo-video__about {
+    border: none;
+  }
+
+  .photo-video__header {
+    font-size: 30px;
+    width: 648px;
+    line-height: 26px;
+  }
+
+  .photo-video__paragrapg {
+    width: 430px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: $form-light-black;
+  }
+
+  .photo-video__still-doubt {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .photo-video__end-doubt {
+    width: 435px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: $form-light-black;
+  }
+
+  .photo-video__photo {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .photo-video__movie {
+    width: 648px;
+    height: 500px;
+  }
+
+  .photo-video__range-filter {
+    width: 648px;
+    padding-left: 0;
+    bottom: 13px;
+  }
+
+  .photo-video__controls {
+    height: 92px;
+    padding: 0 165px 0 93px;
+  }
+
+  .photo-video__scale {
+    margin-top: 45px;
+  }
+
+  .photo-video__toggle--min {
+    left: 210px;
+    top: 41px;
+  }
+
+  .photo-video__buttons {
+    left: 60px;
+    bottom: 25px;
+    width: 648px;
+    background-color: transparent;
+  }
+
+  .photo-video__buttons svg {
+    fill: $white;
+  }
+
+  .photo-video__replay-btn {
+    margin-right: 475px;
+    margin-left: 35px;
+  }
+}
+
+@media #{$desktop} {
+  .photo-video {
+    width: 1200px;
+  }
+
+  .photo-video__about {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+  }
+
+  .photo-video__header {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 110px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .photo-video__paragrapg {
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 70px;
+    color: $form-light-black;
+  }
+
+  .photo-video__photo {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    padding-left: 60px;
+  }
+
+  .photo-video__doubt {
+    padding-top: 60px;
+    background-color: $white;
+  }
+
+  .photo-video__block .photo-video__container {
+    background-color: $white;
+    padding-bottom: 130px;
+    margin-bottom: 0;
+  }
+
+  .photo-video__movie {
+    width: 800px;
+  }
+
+  .photo-video__range-filter {
+    width: 800px;
+    bottom: 130px;
+  }
+
+  .photo-video__buttons {
+    width: 800px;
+    left: 200px;
+    bottom: 140px;
+  }
+
+  .photo-video__buttons svg {
+    padding-top: 32px;
+  }
+
+  .photo-video__replay-btn {
+    margin-right: 620px;
+  }
+}

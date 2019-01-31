@@ -1,0 +1,53 @@
+.write-opinion {
+  text-align: center;
+  border-bottom: 1px solid $light-grey-bg;
+}
+
+.write-opinion__header {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.write-opinion__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  color: $form-light-black;
+}
+
+@media #{$tablet} {
+  .write-opinion {
+    border: none;
+    margin: 0;
+  }
+
+  .write-opinion__header {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 75px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .write-opinion__paragraph {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $form-light-black;
+    border: none;
+  }
+}
+
+@media #{$desktop} {
+  .write-opinion__header {
+    padding-top: 110px;
+  }
+
+  .write-opinion__paragraph {
+    width: 436px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+  }
+}
